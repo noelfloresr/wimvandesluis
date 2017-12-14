@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i');
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500');
+
+$font: 'Roboto', sans-serif;
+$font-roboto: 'Roboto', sans-serif;
+$font-pt-serif: 'PT Serif', serif;
+$font-merriweather: 'Merriweather', serif;
+$font-merriweather-sans: 'Merriweather Sans', sans-serif;
+$font-open-sans: 'Open Sans', sans-serif;
+
+/* Font Size
+-------------------------------*/
+.fsize11 { font-size: 11px !important; }
+.fsize12 { font-size: 12px !important; }
+.fsize13 { font-size: 13px !important; }
+.fsize14 { font-size: 14px !important; }
+.fsize15 { font-size: 15px !important; }
+.fsize16 { font-size: 16px !important; }
+.fsize17 { font-size: 17px !important; }
+.fsize18 { font-size: 18px !important; }
+.fsize20 { font-size: 20px !important; }
+.fsize22 { font-size: 22px !important; }
+.fsize24 { font-size: 24px !important; }
+.fsize26 { font-size: 26px !important; }
+.fsize28 { font-size: 28px !important; }
+.fsize30 { font-size: 30px !important; }
+.fsize32 { font-size: 32px !important; }
+.fsize36 { font-size: 36px !important; }
+.fsize48 { font-size: 48px !important; }
+.fsize60 { font-size: 60px !important; }
+.fsize80 { font-size: 80px !important; }
+.fsize100 { font-size: 100px !important; }
+
+h1, h2{
+	font-weight: 700!important;
+}
+
+.typo-title{
+	font-size: 100px;
+	padding-bottom: 64px;
+}
+
+.typo-subtitle{
+	font-size: 22px;
+	line-height: 28px;
+	padding-bottom: 40px;
+}
+
+.typo-content{
+	font-size: 22px;
+	line-height: 40px;
+}
+
+.text-gray{
+	color: #858c97 !important;
+}
+
+
+//CENSIS
+.font-merriweather-sans{
+	font-family: $font-merriweather-sans;
+	.typo-title,
+	.typo-subtitle{
+		color: #3492C8;
+	}
+
+}
+
+.font-merriweather{
+	font-family: $font-merriweather;
+	.typo-title,
+	.typo-subtitle{
+		color: #3492C8;
+	}
+
+}
+
+//TRANSPORTATION SOLUTION
+.roboto-regular,
+.roboto-medium{
+	.typo-title,
+	.typo-subtitle{
+		color: #AB192D;
+	}
+}
+
+.roboto-medium{
+	font-weight: 500;
+}
+
+//BREATHEAWERE
+.font-open-sans{
+	font-family: $font-open-sans;
+	.typo-title,
+	.typo-subtitle{
+		color: #455CC6;
+	}
+	&.light{
+		font-weight: 300;
+	}
+	&.semibold{
+		font-weight: 600;
+	}
+	&.regular{
+		font-weight: 400;
+	}
+	&.bold{
+		font-weight: 700;
+	}
+}
+
+//CLIENT CANVAS
+.font-montserrat{
+	font-family: 'Montserrat', sans-serif;
+	&.medium{
+		font-weight: 500;
+	}
+	.typo-title,
+	.typo-subtitle{
+		color: #78B05B;
+	}
+}
+
+//Experience Global
+.font-roboto{
+	font-family: $font-roboto;
+	&.medium{
+		font-weight: 500;
+	}
+	.typo-title,
+	.typo-subtitle{
+		color: #138EBD;
+	}
+}
+
+

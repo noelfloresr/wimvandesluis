@@ -1,0 +1,62 @@
+.page-id-57{
+	.et_pb_section{
+		padding-top: 150px;
+	}
+}
+
+
+.banner-case-study{
+	padding-top: 145px;
+	min-height: 800px;
+	.sub-heading{
+		letter-spacing: 6px;
+	}
+	
+	.et_pb_button{
+		min-width: 202px;
+		&:after{
+			top: 14px;
+		}
+	}
+
+}
+
+.banner-case-study{
+	.sub-heading{
+		font-size: 14px;
+	}
+	h2{
+		font-size: 28px;
+	}
+	h3{
+		font-size: 18px;
+	}
+}
+
+
+@media(min-width:768px){
+	.banner-case-study{
+		h2{
+			font-size: 34px;
+		}
+		h3{
+			font-size: 24px;
+		}
+	}
+}
+
+
+@media(min-width: 981px){
+	.banner-case-study{
+		.sub-heading{
+			font-size: 22px;
+		}
+		h2{
+			font-size: 80px;
+			
+		}
+		h3{
+			font-size: 32px;
+		}
+	}
+}

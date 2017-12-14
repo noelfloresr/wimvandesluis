@@ -1,0 +1,81 @@
+
+
+
+#fp-nav > ul > li:nth-child(1),
+#fp-nav > ul > li:last-child{
+	display: none;
+}
+
+#fp-nav{
+	ul{
+		margin-right: 20px;
+		li{
+			margin:0;
+			margin-bottom: 10px!important;
+			a{
+				span{
+					width: 10px!important;
+					height: 10px!important;
+					background: transparent!important;
+					border: 2px solid #B7B7B7;
+					margin: 0!important;
+				}
+				&.active{
+					span{
+						border: 2px solid #666!important;
+					}
+				}
+			}
+		}
+		&.censisLinks{
+			li{
+				a{
+					span{
+						border: 2px solid white!important;
+						opacity: 0.3;
+					}
+					&.active{
+						span{
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+	}	
+}
+
+.et_pb_side_nav{
+	background:none!important;
+	right:15px!important;
+	li{
+		&:first-child,
+		&:last-child{
+			display: none;
+		}
+		a{
+			border: 2px solid #B7B7B7;
+			background: none!important;
+			width: 10px!important;
+			height: 10px!important;
+			&.active{
+				background: none!important;
+				border: 2px solid #666!important;
+			}
+		}
+	}
+}
+ul.et_pb_side_nav .side_nav_item a.active{
+	background:none!important;
+}
+
+@media(max-width:1199px){
+	#fp-nav{
+		display: none!important;
+	}
+	.et_pb_side_nav{
+		display: none!important;
+	}
+}
+
+

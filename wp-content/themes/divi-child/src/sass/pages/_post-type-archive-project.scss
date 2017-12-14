@@ -1,0 +1,121 @@
+.post-type-archive-project{
+	h1{
+		font-size: 68px;
+		font-weight: bold;
+		line-height: 90px;
+		margin-top: 100px;
+		@media(max-width:576px){
+			font-size: 40px;
+			margin-top: 60px;
+		}
+	}
+	.recent-work-content{
+		display: flex;
+		flex-flow: row wrap;
+		article{
+			position: relative;
+			transition: all ease 0.5;
+			width: 48%;
+			margin-bottom: 30px;
+			img{
+				height: 100%;
+			}
+			.holder{
+				display: none;
+				position: absolute;
+				z-index: 1;
+				bottom: 45%;
+				padding-left: 40px;
+				color: white;
+				.tags{
+					.tag-item{
+						color: white;
+						display: inline-block;
+						font-size: 16px;
+						letter-spacing: 4px;
+						margin-bottom: 25px;
+						position: relative;
+						padding-right: 15px;
+						text-transform: uppercase;
+						&:after{
+							position: absolute;
+							content: ' / ';
+							right: 0;
+							top: 0;
+						}
+						&:last-child{
+							&:after{
+								display: none;
+							}
+						}
+					}
+				}
+				.entry-title{
+					color: white;
+					font-size: 40px;
+					font-weight: 700;
+				}
+				p{
+					font-size: 22px;
+				}
+			}
+			.view-link{
+				display: none;
+				position: absolute;
+				bottom: 40px;
+				left: 40px;
+				a{
+					background: #69718D;
+					color: white;
+					display: block;
+					width: 200px;
+					height: 55px;
+					text-align: center;	
+					font-size: 18px;
+					font-weight: 500;
+					padding-top: 10px;
+					&:hover{
+						background: darken(#69718D, 20%);
+					}
+				}
+			}
+			&:nth-child(odd){
+				margin-right: 30px;
+			}
+			&:hover{
+				transition: all ease 0.5;
+				&:before{
+					position: absolute;
+					content: '';
+					width: 100%;
+					height: 100%;
+					background: rgba(black, 0.6);
+				}
+				.holder{
+					display: block;
+				}
+				.view-link{
+					display: block;
+				}
+			}
+		}
+		@media(max-width: 980px){
+			flex-direction: column;
+			article{
+				width: 100%;
+				margin-right: 0;
+			}
+		}
+		@media(max-width:576px){
+			article{
+				margin-bottom: 0;
+			}
+		}
+	}//recent work
+	.wp-pagenavi{
+		.pages{
+			display: none;
+		}
+		.nextpostslink{}
+	}
+}

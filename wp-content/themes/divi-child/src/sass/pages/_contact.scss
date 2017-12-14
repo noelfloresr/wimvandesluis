@@ -1,0 +1,381 @@
+
+form.invalid .contact-form .contact-fields input[type="submit"]{
+bottom: 100px;
+}
+
+form.invalid .wpcf7-not-valid-tip{
+color:white;
+position:absolute;
+bottom: -17px;
+font-size: 12px;
+}
+
+
+.contact-form{
+	display: flex;
+	box-shadow: 0 0 20px rgba(#442F20, 0.3);
+	flex-direction: column;
+	.contact-map{
+		background: url('http://f47.2b1.mwp.accessdomain.com/wp-content/uploads/map-mobile2.jpg') top center no-repeat;
+		background-position-x: 40%;
+		background-size: cover;
+		position: relative;
+		min-height: 589px;
+		order: 2;
+		.contact-info{
+			padding: 30px;
+			position: absolute;
+			top: 30%;
+			right: calc(50% - 125px);
+			font-size: 16px;
+			box-shadow: 0 0 30px rgba(black, 0.20);
+			background: rgba(white, 0.9);
+			line-height: 24px;
+			max-width: 360px;
+			&:after{
+				position: absolute;
+				content: '';
+				border-left: 10px solid transparent;
+				border-right: 10px solid transparent;
+				border-bottom: 10px solid white;
+				top: -9px;
+				left: 50%;
+			}
+			.title{
+				color: #C6C0BC;
+				margin-top: 10px;
+			}
+			.content{
+				a{
+					color: #442F20;
+					font-weight: 400;
+				}
+				color: #442F20;
+				font-weight: 400;
+			}
+			.open-map{
+				margin-top: 10px;
+				display: block;
+				font-weight: 500;
+			}
+		}
+	}
+	.contact-fields{
+		padding: 20px;
+		background-color: $red;
+		color: white;
+		.header{
+			margin-bottom: 40px;
+			h2{
+				color: white;
+				font-size: 28px;
+				font-weight: bold;
+				margin-top: 80px;
+			}
+			p{
+
+			}
+		}
+		
+		.contact-name,
+		.contact-company,
+		.contact-email,
+		.contact-phone{
+			width: 100%;
+			display: block;
+			margin-bottom: 20px;
+		}
+		br{
+			display: none;
+		}
+	}
+	.wpcf7-list-item{
+		margin: 0;
+	}
+	input[type=text],
+	input[type=email],
+	input[type=tel],
+	textarea{
+		min-height: 55px;
+		background-color: $red-dark;
+		color: white;
+		font-size: 16px;
+		padding: 10px;
+		margin-bottom: 10px;
+		border: none;
+		width: 100%;
+	}
+	input:placeholder,
+	textarea:placeholder{
+		color: white;
+	}
+	input::-webkit-input-placeholder,
+	textarea::-webkit-input-placeholder{ /* Chrome/Opera/Safari */
+	  color: white;
+	}
+	input::-moz-placeholder,
+	textarea::-moz-placeholder{ /* Firefox 19+ */
+	  color: white;
+	  opacity: 1;
+	}
+	input::-ms-input-placeholder,
+	textarea::-ms-input-placeholder{ /* IE 10+ */
+	  color: white;
+	}
+
+	//Checkboxes
+	.contact-services-checkbox{
+		.wpcf7-list-item{
+			width: 100%;
+			margin-bottom: 10px;
+			position: relative;
+		}
+	}
+	input[type=checkbox]{
+		apperance: none!important;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		background: $red-dark;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		position: absolute;
+		cursor: pointer;
+		&:checked{
+			background: url(/wp-content/uploads/white-check.png) no-repeat center center;
+		}
+		& + span{
+			margin-left: 40px;
+			margin-right: 20px;
+			margin-top: 0;
+			display: block;
+			font-size: 16px;
+		}
+		//For Radio Button
+	}
+
+	//radio button
+	input[name='contact-radiobutton[]']{
+		@extend input[type=checkbox];
+		border-radius: 0;
+		&:checked{
+			background: url(/wp-content/uploads/radio-checked.png) no-repeat center center;
+		}
+	}
+
+	//Submit
+	input[type=submit]{
+		apperance: none!important;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		width: 100%;
+		height: 55px;
+		background-color: white;
+		color: $default-font-color;
+		font-weight: 500;
+		font-size: 18px;
+		border: none; 
+		margin-top: 30px;
+		cursor: pointer;
+	}
+}
+
+@media(max-width:1200px){
+	.row-contact{
+		&.et_pb_row_fullwidth{
+			max-width: 100%!important;
+			width: 100%!important;
+			padding: 0!important;
+		}
+
+	}
+}
+
+@media(min-width: 544px){
+	.contact-form{
+		
+		.contact-fields{
+			padding: 30px 60px;
+			//Checkboxes
+			.contact-services-checkbox{
+				.wpcf7-list-item{
+					width: 50%;
+					margin-bottom: 10px;
+					position: relative;
+				}
+			}
+		}
+	}
+}
+
+@media(min-width:768px){
+	.contact-form{
+		.contact-fields{
+			.header{
+				margin-bottom: 40px;
+				h2{
+					font-size: 36px;
+				}
+				p{
+					font-weight: bold;
+				}
+			}
+			
+			.contact-name,
+			.contact-company,
+			.contact-email,
+			.contact-phone{
+				width: 48%;
+				display: inline-block;
+				margin-bottom: 20px;
+			}
+			.contact-name,
+			.contact-email{
+				margin-right: 20px; 
+			}
+			br{
+				display: none;
+			}
+			input[type=text],
+			input[type=email],
+			input[type=tel],
+			textarea{
+
+			}
+
+			input[type=submit]{
+				width: 50%;
+				display: block;
+				margin: auto;
+				margin-top: 30px;
+			}
+
+			.wpcf7-list-item{
+				margin: 0;
+			}
+		}
+	}
+}
+
+@media(min-width:981px){
+	.contact-form{
+		.contact-map{
+			background: url('http://f47.2b1.mwp.accessdomain.com/wp-content/uploads/Map.jpg') center left no-repeat;
+			background-size: cover;
+			.contact-info{
+				padding: 30px;
+				position: absolute;
+				top: 16%;
+				right: 30%;
+			
+				&:after{
+					position: absolute;
+					content: '';
+					border-top: 10px solid transparent;
+					border-bottom: 10px solid transparent;
+					border-right: 10px solid white;
+					top: 50%;
+					left: -20px;
+				}
+			}
+		}
+		.contact-fields{
+
+			//Checkboxes
+			.contact-services-checkbox{
+				.wpcf7-checkbox{
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-between;
+					.wpcf7-list-item{
+						width: auto;
+						&:last-child{
+							margin-right: 0;
+						}
+					}
+				}
+				
+				
+			}
+			input[type=checkbox]{
+				position: absolute;
+			}
+
+		}
+	}
+}
+
+
+@media(min-width:1280px){
+	.contact-form{
+		flex-direction: row;
+		.contact-map{
+			flex: 1 100%;
+			min-height: auto;
+			background-position-x: 45%;
+			.contact-info{
+				top: 30%;
+				right: 15%;
+			}
+		}
+		.contact-fields{
+			order: 2;
+			flex: 1 100%;
+			.header{
+				margin-bottom: 40px;
+			}
+			
+			.contact-name,
+			.contact-company,
+			.contact-email,
+			.contact-phone{
+				width: 100%;
+				display: block;
+			}
+		}
+	}	
+}
+
+@media(min-width:1600px){
+	.contact-form{
+		.contact-map{
+			background-position-x: 25%;
+			.contact-info{
+				top: 27%;
+			}
+		}
+		.contact-fields{
+			
+			.contact-name,
+			.contact-company,
+			.contact-email,
+			.contact-phone{
+				width: 48%;
+				display: inline-block;
+			}
+
+			input[type=submit]{
+				position: absolute;
+				right: 40px;
+				bottom: 65px;
+				width: 190px;
+			}
+		}
+	}
+}
+
+//POPPUP
+.popmake-content{
+	.et_pb_row{
+		max-width: 100%!important;
+		width: 100%!important;
+		padding: 0!important;
+	}
+
+	.contact-form .contact-fields input[type="submit"]{
+		bottom: 30px;
+	}
+	.contact-form input[type="checkbox"] + span, .contact-form input[name="contact-radiobutton[]"] + span{
+		margin-top: 10px;
+	}
+}
