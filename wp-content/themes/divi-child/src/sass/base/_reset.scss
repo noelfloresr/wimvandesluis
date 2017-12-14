@@ -1,52 +1,6 @@
 
-@media(max-width:544px){
-	#main-header{
-		.container{
-			width: 100%;
-			padding-left: 25px;
-			padding-right: 25px;
-		}
-	}
-	.et_pb_row{
-		width: 100%;
-		padding: 30px 24px;
-	}
-	.et_pb_row.et_pb_row_fullwidth{
-		max-width: 100%!important;
-		width: 100%!important;
-	}
-}
-
-@media(min-width:981px){
-	.et_pb_row.et_pb_row_fullwidth{
-		max-width: 1600px!important; 
-	}
-}
-
-@media(min-width:1620px){
-	.et_pb_row.et_pb_row_fullwidth{
-		width: 1600px!important; 
-		padding: 0 60px;
-	}
-}
 
 body{
-	font-family: $font;
-	font-weight: 300;
-}
-
-a.single-link{
-	font-size: 22px;
-	font-weight: 500;
-	position: relative;
-	&:after{
-		content: '';
-		width: 100%;
-		height: 4px;
-		position: absolute;
-		background: $red;
-		opacity: 0.30;
-		bottom: -20px;
-		left: 0;
-	}
+	font-family: $default-font;
+	color: $font-color;
 }

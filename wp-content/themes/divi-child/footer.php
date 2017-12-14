@@ -31,23 +31,6 @@ if ( ! is_page_template( 'page-template-blank.php' ) ) : ?>
 
 			<?php endif; ?>
 
-				<div class="et_pb_section footer-section">
-				<div class="back-top">
-					<a href="/#banner">back to the top <i class="fa fa-angle-up" aria-hidden="true"></i></a>
-				</div>
-					<div class="et_pb_row">
-						<div class="et_pb_column">
-							<p>+1 615-236-6868</p>
-						</div>
-						<div class="et_pb_column">
-							<p>2017 © PilgrimRoadCreative</p>
-						</div>
-						<div class="et_pb_column">
-							<a href="mailto:hello@pilgrimroad.com" style="color:#fff">hello@pilgrimroad.com</a>
-						</div>
-					</div>
-				</div>
-
 				<div id="footer-bottom">
 					<div class="container clearfix">
 				<?php
