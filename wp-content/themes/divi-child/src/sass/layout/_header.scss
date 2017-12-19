@@ -2,4 +2,61 @@
 
 #main-header{
 	z-index: 0;
+	background-color: $yellow;
+	min-height: 160px;
+	.logo_container{
+		top: 0;
+		a{
+			float: right;
+			#logo{
+				max-height: 100%;
+			}
+		}
+	}
+	.logo-text{
+		h2{
+			font-size: 40px;
+			padding-top: 20px;
+			font-weight: 600;
+		}
+	}
+	@media(min-width:981px){
+		.container{
+			width: 100%;
+		}
+	}
 }
+
+#et-top-navigation{
+	float: left!important;
+	padding-left: 0!important;
+	padding-top: 25px!important;
+	nav{
+		ul{
+			li{
+				padding-right: 2px;
+				a{
+					padding: 13px!important;
+					font-weight: normal;
+					border-top-left-radius: 5px;
+					border-top-right-radius: 5px;
+					&:hover{
+						background-color: #eeeeee;
+						opacity: 1;
+					}
+				}
+				&.last-child{
+					padding-right: 0;
+				}
+				&.current-menu-item{
+					a{
+						background-color: white;
+						font-weight: 600;	
+					}
+				}
+			}
+		}
+	}
+}
+
+

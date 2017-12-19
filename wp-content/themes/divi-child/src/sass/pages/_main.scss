@@ -7,5 +7,12 @@
 		margin: auto;
 		margin-top: -30px;
 		border-radius: 5px; //check
+		z-index: 99999;
+		.entry-content{
+			&>.et_pb_section{
+				border-top-left-radius: 5px;
+				border-top-right-radius: 5px;
+			}
+		}
 	}
 }

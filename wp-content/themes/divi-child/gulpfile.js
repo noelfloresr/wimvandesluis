@@ -19,8 +19,7 @@ var path = {
 var scripts = [
     path.srcjs + 'sofy-sharer.js',
     path.srcjs + 'slick.js',
-    path.srcjs + 'main.js',
-    // path.srcjs + 'team.js'
+    path.srcjs + 'main.js'
 ];
 
 gulp.task('sass', function(){
@@ -33,7 +32,7 @@ gulp.task('sass', function(){
         .pipe(rename({ suffix: '.min' }))
         .pipe(sourcemaps.write(undefined, { sourceRoot: null }))
         .pipe(cssnano())
-        .pipe(gulp.dest(path.distcss))
+        .pipe(gulp.dest('./'))
 });
 
 gulp.task('scripts', function(){

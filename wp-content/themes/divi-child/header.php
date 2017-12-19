@@ -203,6 +203,9 @@
 
 		<header id="main-header" data-height-onload="<?php echo esc_attr( et_get_option( 'menu_height', '66' ) ); ?>">
 			<div class="container clearfix et_menu_container">
+				<div class="logo-text">
+					<h2><a href="http://www.wimvandesluis.nl/">WIM VAN DE SLUIS</a></h2>
+				</div>
 			<?php
 				$logo = ( $user_logo = et_get_option( 'divi_logo' ) ) && '' != $user_logo
 					? $user_logo
