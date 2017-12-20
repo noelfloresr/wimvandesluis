@@ -3,13 +3,14 @@
 @media(min-width:981px){
 	#et-main-area{
 		max-width: 1080px;
+		width:97%;
 		position: relative;
 		margin: auto;
-		margin-top: -30px;
+		margin-top: -24px;
 		border-radius: 5px; //check
 		z-index: 99999;
 		.entry-content{
-			&>.et_pb_section{
+			.et_pb_section:first-child{
 				border-top-left-radius: 5px;
 				border-top-right-radius: 5px;
 			}

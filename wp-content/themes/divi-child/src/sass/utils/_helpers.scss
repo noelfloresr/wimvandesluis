@@ -1,0 +1,18 @@
+
+
+.display-desktop{
+	display: none;
+}
+
+.display-mobile{
+	display: inline-block;
+}
+
+@media(min-width:981px){
+	.display-desktop{
+		display: block;
+	}
+	.display-mobile{
+		display: none;
+	}
+}

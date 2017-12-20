@@ -2,3 +2,10 @@ body{
 	font-family: $default-font;
 	color: $font-color;
 }
+
+.et_pb_section{
+	padding: 20px 20px 0 20px!important;
+	.et_pb_row{
+		padding: 0;
+	}
+}
