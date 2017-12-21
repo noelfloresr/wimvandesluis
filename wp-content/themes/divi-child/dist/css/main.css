@@ -70,6 +70,9 @@ body {
   .et_pb_section .et_pb_row {
     padding: 0; }
 
+.et_pb_row {
+  width: 100% !important; }
+
 .p-5 {
   padding: 5px !important; }
 
@@ -833,6 +836,17 @@ body {
 
 .et_fixed_nav #main-header {
   position: absolute; }
+
+footer .container {
+  width: 97%;
+  border-top: 1px solid #ebebeb; }
+  footer .container #footer-info {
+    padding-top: 20px; }
+
+#et-main-area {
+  background-color: white !important; }
+  #et-main-area #main-content {
+    padding-bottom: 80px; }
 
 @media (min-width: 981px) {
   #et-main-area {
