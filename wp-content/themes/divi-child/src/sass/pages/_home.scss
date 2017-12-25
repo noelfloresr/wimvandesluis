@@ -31,3 +31,34 @@
 		}
 	}
 }
+
+@media(min-width:981px){
+	.home{
+		.home-contact{
+			margin-top: -104px;
+		} 
+	}
+	.home-blog{
+		article{
+			margin: 20px;
+			background-color: white;
+			.entry-featured-image-url{
+				width: 30%;
+				float: left;
+				margin-right: 20px;
+				margin-bottom: 0;
+			}
+			h2{
+				padding-top: 10px;
+			}
+			.post-content{
+				p{
+					line-height: 18px;
+				}
+				.more-link{
+					display: inline-block;
+				}
+			}
+		}
+	}
+}

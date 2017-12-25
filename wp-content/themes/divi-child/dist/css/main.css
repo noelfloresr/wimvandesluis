@@ -900,3 +900,24 @@ footer .container {
       font-size: 16px;
       width: 25px;
       text-align: center; }
+
+@media (min-width: 981px) {
+  .home .home-contact {
+    margin-top: -104px; }
+  .home-blog article {
+    margin: 20px;
+    background-color: white; }
+    .home-blog article .entry-featured-image-url {
+      width: 30%;
+      float: left;
+      margin-right: 20px;
+      margin-bottom: 0; }
+    .home-blog article h2 {
+      padding-top: 10px; }
+    .home-blog article .post-content p {
+      line-height: 18px; }
+    .home-blog article .post-content .more-link {
+      display: inline-block; } }
+
+.page-id-87 article {
+  min-height: 400px; }

@@ -17,7 +17,6 @@ var path = {
 };
 
 var scripts = [
-    path.srcjs + 'sofy-sharer.js',
     path.srcjs + 'slick.js',
     path.srcjs + 'main.js'
 ];

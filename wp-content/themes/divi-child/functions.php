@@ -14,7 +14,6 @@ function child_theme_assets() {
     wp_enqueue_style( 'child_theme_styles', get_stylesheet_directory_uri() . '/dist/css/main.css');
     
 
-    wp_enqueue_script( 'sofyshare_theme_scripts', get_stylesheet_directory_uri() . '/dist/js/sofyshare.js', array('jquery'), '1', true); 
     wp_enqueue_script( 'child_theme_scripts', get_stylesheet_directory_uri() . '/dist/js/scripts.min.js', array('jquery'), '1', true); 
 }
 
