@@ -901,6 +901,12 @@ footer .container {
       width: 25px;
       text-align: center; }
 
+.entry-title {
+  padding: 10px; }
+
+.post-content {
+  padding: 10px; }
+
 @media (min-width: 981px) {
   .home .home-contact {
     margin-top: -104px; }
@@ -913,6 +919,7 @@ footer .container {
       margin-right: 20px;
       margin-bottom: 0; }
     .home-blog article h2 {
+      padding: 0;
       padding-top: 10px; }
     .home-blog article .post-content p {
       line-height: 18px; }
